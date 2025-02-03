@@ -30,19 +30,19 @@ checkUser();
     <router-link class="menu__link" to="/">Home</router-link>
     <router-link
       class="menu__link"
-      to="/"
+      to="/signup"
       v-if="!token"
     >
       Sign up</router-link>
     <router-link
       class="menu__link"
-      to="/signup"
+      to="/cars"
       v-if="token"
     >
       Cars</router-link>
     <router-link
       class="menu__link"
-      to="/cars"
+      to="/signin"
       v-if="token"
       @click.prevent="logout"
     >
